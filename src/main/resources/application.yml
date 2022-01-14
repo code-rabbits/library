@@ -1,0 +1,15 @@
+# \u5F00\u53D1\u73AF\u5883\u914D\u7F6E
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+#MybatisPlus\u7684\u914D\u7F6E
+mybatis-plus:
+  typeAliasesPackage: com.star.**.entity
+  mapper-locations: classpath*:mapper/**/*Mapper.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+
