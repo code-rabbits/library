@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.star.mapper.LendListMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.star.entity.LendList">
+        <id column="id" property="id" />
+        <result column="book_id" property="bookId" />
+        <result column="reader_id" property="readerId" />
+        <result column="lend_date" property="lendDate" />
+        <result column="back_date" property="backDate" />
+        <result column="type" property="type" />
+        <result column="remarks" property="remarks" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, book_id, reader_id, lend_date, back_date, type, remarks
+    </sql>
+
+</mapper>
